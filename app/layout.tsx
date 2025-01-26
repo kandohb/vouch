@@ -36,8 +36,8 @@ export default function RootLayout({
 					enableSystem
 					disableTransitionOnChange
 				>
-					<main className='min-h-screen flex flex-col items-center'>
-						<div className='flex-1 w-full flex flex-col items-center'>
+					<main className='min-h-screen flex flex-col'>
+						<div className='flex-1 w-full flex flex-col'>
 							<nav className='w-full flex h-16'>
 								{/* Container */}
 								<div className='w-full flex justify-between items-center px-4 max-w-screen-xl mx-auto'>
@@ -51,7 +51,7 @@ export default function RootLayout({
 									</div>
 								</div>
 							</nav>
-							<div className='flex flex-col gap-20 max-w-5xl p-5'>
+							<div className='flex flex-col max-w-5xl z-50 pt-10'>
 								{children}
 							</div>
 						</div>
