@@ -7,6 +7,14 @@ const nextConfig: NextConfig = {
 				protocol: 'https',
 				hostname: 'images.unsplash.com',
 			},
+			{
+				protocol: 'https',
+				hostname: 'beuw6r12zz.ufs.sh',
+			},
+			{
+				protocol: 'https',
+				hostname: 'assets.aceternity.com',
+			},
 		],
 	},
 };
