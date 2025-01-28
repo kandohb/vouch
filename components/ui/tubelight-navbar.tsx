@@ -3,7 +3,15 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { Home, User, Building2, LogIn, UserPlus, LogOut } from 'lucide-react';
+import {
+	Home,
+	User,
+	Building2,
+	LogIn,
+	UserPlus,
+	LogOut,
+	Telescope,
+} from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 interface NavItem {
@@ -37,6 +45,7 @@ export function NavBar({ items, className }: NavBarProps) {
 	> = {
 		Home,
 		Profile: User,
+		Explore: Telescope,
 		About: Building2,
 		Login: LogIn,
 		'Sign Up': UserPlus,

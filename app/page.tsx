@@ -11,14 +11,12 @@ import { Testimonials } from '@/components/ui/testimonials';
 import Footer from '@/components/nav/footer';
 
 const urls = [
-	'https://beuw6r12zz.ufs.sh/f/cEyWJRCaFWGzjIVq9EeCMjRKkNHtbxPgXw3lSp2OmQyZG4Td',
-	'https://beuw6r12zz.ufs.sh/f/cEyWJRCaFWGzte30Uvqf08OHpN9bKRrDc75Wa63whjP2SElT',
-	'https://beuw6r12zz.ufs.sh/f/cEyWJRCaFWGzwIVHiwTPvJGLabWrUKf18Qwgq5MmXkBxRlo6',
+	'https://beuw6r12zz.ufs.sh/f/cEyWJRCaFWGzwibMVNTPvJGLabWrUKf18Qwgq5MmXkBxRlo6',
 	'https://beuw6r12zz.ufs.sh/f/cEyWJRCaFWGznKTIUNUupi9SzdjPQgOXbmwVrfFHWe0CcTvB',
 	'https://beuw6r12zz.ufs.sh/f/cEyWJRCaFWGz0jHDom47mzbT6xwQPgXdNWj12tlG35CZUsnL',
-	'https://beuw6r12zz.ufs.sh/f/cEyWJRCaFWGzOyU0mtubSMue5oac3ryfFIY0QNVhCmAxqjdv',
-	'https://beuw6r12zz.ufs.sh/f/cEyWJRCaFWGzwibMVNTPvJGLabWrUKf18Qwgq5MmXkBxRlo6',
-	'https://beuw6r12zz.ufs.sh/f/cEyWJRCaFWGziUhLWNs5gPz0nGtvaMT83jYEm2XUWd19yBR4',
+	'https://beuw6r12zz.ufs.sh/f/cEyWJRCaFWGz2UPhnQjj35unPXRrlcUF1xZW2bkBmvhfDIEa',
+	'https://beuw6r12zz.ufs.sh/f/cEyWJRCaFWGzudXIzRaGsDLYiqPBd3jwRofcFtIzbKNrXlZS',
+	'https://beuw6r12zz.ufs.sh/f/cEyWJRCaFWGzcIgKXcCaFWGzj3Ow0ry9Q6bnZtSYVxqhDAeg',
 ];
 
 const cardContent = {
@@ -80,7 +78,7 @@ const Home: React.FC = () => {
 				<p className='absolute text-xs md:text-sm md:ml-36 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-muted-foreground w-full mt-10'>
 					(Grab a memory)
 				</p>
-				<DragElements dragMomentum={true} className='p-10'>
+				<DragElements dragMomentum={true} className='p-10 z-50'>
 					{urls.map((url, index) => {
 						const style = randomStyles[index];
 						if (!style) return null; // Wait for styles to generate
@@ -140,7 +138,7 @@ const Home: React.FC = () => {
 					/>
 				</div>
 				{/* Get Started Button */}
-				<div className='flex items-center justify-center mt-10'>
+				<div className='flex items-center justify-center mt-10 z-50'>
 					<Button
 						variant='default'
 						className='px-6 py-3 text-lg font-medium shadow-md rounded-full'
@@ -151,7 +149,7 @@ const Home: React.FC = () => {
 				</div>
 			</section>
 			{/* Testimonials Section */}
-			<section className='w-full bg-background py-20 flex flex-col items-center justify-center'>
+			<section className='w-full bg-background py-20 flex flex-col items-center justify-center z-50'>
 				<Testimonials />
 			</section>
 			{/* Footer Section */}

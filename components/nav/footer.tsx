@@ -25,8 +25,8 @@ const Footer: React.FC = () => {
 							</Link>
 						</ul>
 						<ul className='flex flex-col space-y-4'>
-							<Link href='https://github.com/vouch-ai'>
-								<CenterUnderline label='Github' />
+							<Link href='https://www.tiktok.com/@vouch.ai'>
+								<CenterUnderline label='TikTok' />
 							</Link>
 							<Link href='https://www.instagram.com/vouch.ai'>
 								<CenterUnderline label='Instagram' />

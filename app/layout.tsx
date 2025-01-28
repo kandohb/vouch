@@ -40,7 +40,7 @@ export default function RootLayout({
 						<div className='flex-1 w-full flex flex-col'>
 							<nav className='w-full flex h-16'>
 								{/* Container */}
-								<div className='w-full flex justify-between items-center px-4 max-w-screen-xl mx-auto'>
+								<div className='w-full flex justify-between items-center px-2 max-w-screen-xl mx-auto'>
 									{/* Left Section: Vouch */}
 									<div className='flex items-center font-semibold'>
 										<Link href='/'>Vouch</Link>
