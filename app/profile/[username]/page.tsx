@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default async function ProfilePage({
 	params,
 }: {
-	params: { username: string };
+	params: Promise<{ username: string }>;
 }) {
 	const supabase = await createClient();
 	const { username } = await params;
