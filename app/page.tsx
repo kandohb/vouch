@@ -68,6 +68,7 @@ const Home: React.FC = () => {
 
 	return (
 		<main className='w-full h-full relative bg-background'>
+			{/* Hero Section */}
 			<section className='w-full h-screen relative bg-background scroll-snap-start'>
 				<h1 className='absolute text-2xl md:text-6xl md:ml-36 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-muted-foreground uppercase w-full'>
 					Every ticket tells a
@@ -113,8 +114,9 @@ const Home: React.FC = () => {
 					})}
 				</DragElements>
 			</section>
-			<section className='w-screen h-screen relative bg-background mt-10 scroll-snap-start items-center justify-center mb-96 md:mb-0'>
-				<h1 className='text-2xl md:text-6xl text-center text-foreground w-full font-bold'>
+			{/* Why Should You Choose Us Section */}
+			<section className='w-full min-h-screen bg-background py-20 flex flex-col items-center justify-center'>
+				<h1 className='text-2xl md:text-6xl text-center text-foreground font-bold'>
 					Why Should You Choose Us?
 				</h1>
 				<div className='flex flex-col md:flex-row gap-0 items-center justify-center mt-10 px-10 md:px-0'>
@@ -141,18 +143,18 @@ const Home: React.FC = () => {
 				<div className='flex items-center justify-center mt-10'>
 					<Button
 						variant='default'
-						className='px-6 py-3 text-lg font-medium p-10 shadow-md  z-[1000] rounded-full'
+						className='px-6 py-3 text-lg font-medium shadow-md rounded-full'
 						onClick={() => router.push('/explore')}
 					>
 						Get Started
 					</Button>
 				</div>
 			</section>
-			<section className='w-screen h-screen bg-background mt-10 scroll-snap-start items-center justify-center mb-96 hidden md:block'>
-				<div className='block'>
-					<Testimonials />
-				</div>
+			{/* Testimonials Section */}
+			<section className='w-full bg-background py-20 flex flex-col items-center justify-center'>
+				<Testimonials />
 			</section>
+			{/* Footer Section */}
 			<Footer />
 		</main>
 	);

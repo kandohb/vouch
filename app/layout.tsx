@@ -51,7 +51,9 @@ export default function RootLayout({
 									</div>
 								</div>
 							</nav>
-							<div className='flex flex-col max-w-5xl pt-10'>{children}</div>
+							<div className='flex flex-col w-full items-center max-w-7xl mx-auto pt-10'>
+								{children}
+							</div>
 						</div>
 					</main>
 				</ThemeProvider>
