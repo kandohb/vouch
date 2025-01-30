@@ -65,7 +65,7 @@ const Home: React.FC = () => {
 	}, [screenSize.width]);
 
 	return (
-		<main className='w-full h-full relative bg-background'>
+		<main className='w-screen h-full relative bg-background'>
 			{/* Hero Section */}
 			<section className='w-full h-screen relative bg-background scroll-snap-start'>
 				<h1 className='absolute text-2xl md:text-6xl md:ml-36 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-muted-foreground uppercase w-full'>
